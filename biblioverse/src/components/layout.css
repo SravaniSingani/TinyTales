@@ -1,0 +1,180 @@
+/* Header */
+
+#header{
+    padding: 20px 30px;
+    border-bottom: 1px solid #E6E1E2;
+}
+
+#header a:hover{
+    color: #21120f;
+}
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#site-name{
+    font-size: 24px;
+}
+
+#site-name a{
+    color: #FA604B;
+    text-decoration: none;
+}
+
+#site-navbar ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+#site-navbar li{
+   
+    list-style: none;
+    font-size: 18px;
+}
+
+#site-navbar li a{
+    color: #FA604B;
+    text-decoration: none;
+}
+
+/* BookList */
+.bookContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.bookContainer a{
+    text-decoration: none;
+    color: #21120f;
+}
+
+.bookCard{
+    flex-basis: calc(33.33% - 30px); 
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 15px 30px;
+    border: 2px solid #E6E1E2;
+    margin-bottom: 10px;
+    box-shadow: 1px 5px 5px #c5c0c1;
+}
+
+.bookCard:hover{
+    transform: translateY(10px);
+}
+
+
+.bookCard-img img{
+    width: 15vw;
+    height: 30vh;
+    object-fit: contain;
+}
+
+.bookCard-text{
+    text-align: center;
+}
+
+/* AuthorList */
+
+.authorContainer{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.authorCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 30px;
+    border: 2px solid #E6E1E2;
+    margin-bottom: 10px;
+    width: 25vw;
+    height: auto;
+    overflow: hidden;
+    box-shadow: 1px 5px 5px #c5c0c1;
+}
+
+.authorCard:hover{
+    transform: translateY(10px);
+}
+
+.authorContainer a{
+    text-decoration: none;
+    color: #21120f;
+}
+
+.authorCard h3{
+    text-align: center;
+}
+
+
+.authorCard img{
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Each Book */
+
+.eachbookContainer{
+    margin: 20px;
+   
+}
+
+.eachbookCard{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    border: 2px solid #E6E1E2;
+    box-shadow: 1px 5px 5px #c5c0c1;
+}
+
+.eachbookCard-img img{
+    width: 20vw;
+    height: 40vh;
+    object-fit: contain;
+}
+
+/* Each Author */
+.eachauthorContainer{
+    margin: 20px;
+}
+
+.eachauthorCard{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    border: 2px solid #E6E1E2;
+    box-shadow: 1px 5px 5px #c5c0c1;
+}
+
+#img-container img{
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* footer */
+
+#footer{
+    padding: 15px 30px;
+    border-top: 1px solid #E6E1E2;
+}
+
