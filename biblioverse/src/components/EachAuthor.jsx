@@ -8,7 +8,14 @@ export default function EachAuthor() {
 
   useEffect(() => {
     const getAuthor = async () => {
-      let response = await fetch(`http://localhost:8888/api/authors/${id}`);
+     // let response = await fetch(`http://localhost:8888/api/authors/${id}`);
+      let response;
+        if(import.meta.env.DEV){
+          response = await fetch(`http://localhost:8888/api/authors/${id}`);
+        }
+        else{
+           response = await fetch(`https://tinytales.onrender.com/api/authors/${id}`);
+        }
       let data = await response.json();
       setAuthor(data);
     }

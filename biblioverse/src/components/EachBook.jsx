@@ -8,7 +8,14 @@ export default function EachBook() {
 
   useEffect(() => {
     const getBook = async () => {
-      let response = await fetch(`http://localhost:8888/api/books/${id}`);
+      //let response = await fetch(`http://localhost:8888/api/books/${id}`);
+      let response;
+      if(import.meta.env.DEV){
+        response = await fetch(`http://localhost:8888/api/books/${id}`);
+      }
+      else{
+         response = await fetch(`https://tinytales.onrender.com/api/books/${id}`);
+      }
       let data = await response.json();
       setBook(data);
     }

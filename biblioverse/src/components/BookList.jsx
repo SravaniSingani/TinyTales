@@ -6,6 +6,7 @@ export default function BookList() {
 
   useEffect(() => {
     const getBooks = async () => {
+      let response;
     //  let response = await fetch("http://localhost:8888/api/books");
       if(import.meta.env.DEV){
         let response = await fetch("http://localhost:8888/api/books");
