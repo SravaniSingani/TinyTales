@@ -6,7 +6,12 @@ export default function AuthorList() {
 
   useEffect(() => {
     const getAuthors = async () => {
-      let response = await fetch("http://localhost:8888/api/authors");
+      if(import.meta.env.DEV){
+        let response = await fetch("http://localhost:8888/api/authors");
+      }
+      else{
+        let response = await fetch("https://tinytales.onrender.com/api/authors");
+      }
       let data = await response.json();
       setAuthors(data);
     }

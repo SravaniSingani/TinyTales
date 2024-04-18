@@ -6,7 +6,13 @@ export default function BookList() {
 
   useEffect(() => {
     const getBooks = async () => {
-      let response = await fetch("http://localhost:8888/api/books");
+    //  let response = await fetch("http://localhost:8888/api/books");
+      if(import.meta.env.DEV){
+        let response = await fetch("http://localhost:8888/api/books");
+      }
+      else{
+        let response = await fetch("https://tinytales.onrender.com/api/books");
+      }
       let data = await response.json();
       setBooks(data);
     }
