@@ -16,7 +16,7 @@ export default function Home() {
                 </div>
 
                 <div id='heroimg'>
-                   <img src='./src/assets/hero-img.png' alt='' id='hero_img' />
+                   <img src='../hero-img.png' alt='' id='hero_img' />
                 </div>
             </div>
 
