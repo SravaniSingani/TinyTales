@@ -27,7 +27,7 @@ The website comprises the following components:
 - **Database (MongoDB)**: Stores book and author information.
   
 
-## Technologies Used
+## Tech Stack
 
 - **Frontend**: React.js, HTML, CSS
 - **Backend**: Node.js, Express.js
